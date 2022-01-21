@@ -1,1 +1,1 @@
-Netflic clone using MERN Stack
+Netflix clone using MERN Stack
