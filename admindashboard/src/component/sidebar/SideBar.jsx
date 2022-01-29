@@ -11,7 +11,11 @@ import {
     ChatBubbleOutline,
     WorkOutline,
     Report,
+    List,
+    Create
 } from "@material-ui/icons"
+
+import {Link} from 'react-router-dom'
 
 import './sidebar.css'
 
@@ -21,10 +25,12 @@ export default function SideBar() {
             <div className="sidebarWrapper">
                 <h3 className="sidebarTitle">Dashboard</h3>
                 <ul className="sidebarList">
-                    <li className="sidebarListItems active">
-                        <LineStyle className="sidebarIcons"/>
-                        Home
-                    </li>
+                    <Link to="/" className='link'>
+                        <li className="sidebarListItems active">
+                            <LineStyle className="sidebarIcons"/>
+                            Home
+                        </li>
+                    </Link>
                     <li className="sidebarListItems">
                         <Timeline className="sidebarIcons"/>
                         Analytics
@@ -39,22 +45,35 @@ export default function SideBar() {
             <div className="sidebarWrapper">
                 <h3 className="sidebarTitle">Quick menu</h3>
                 <ul className="sidebarList">
-                    <li className="sidebarListItems active">
-                        <PersonOutline className="sidebarIcons"/>
-                        Users
-                    </li>
-                    <li className="sidebarListItems">
-                        <Storefront  className="sidebarIcons"/>
-                        Procducts
-                    </li>
-                    <li className="sidebarListItems">
-                        <AttachMoney  className="sidebarIcons"/>
-                        Transactions
-                    </li>
+                    <Link to="/user" className='link'>
+                        <li className="sidebarListItems active">
+                            <PersonOutline className="sidebarIcons"/>
+                            Users
+                        </li>
+                    </Link>
+
+                    <Link to="/newUser" className='link'>
+                        <li className="sidebarListItems">
+                            <Storefront  className="sidebarIcons"/>
+                            Create
+                        </li>
+                    </Link>
+                    <Link to="/showall" className="link">
+                        <li className="sidebarListItems">
+                            <List className="sidebarIcons"/>
+                            View All
+                        </li>
+                    </Link>
                     <li className="sidebarListItems">
                         <BarChart   className="sidebarIcons"/>
                         Reports
                     </li>
+                    <Link to="/createnewItem" className='link'>
+                        <li className="sidebarListItems">
+                            <Create   className="sidebarIcons"/>
+                            New Item
+                        </li>
+                    </Link>
                 </ul>
             </div>
 

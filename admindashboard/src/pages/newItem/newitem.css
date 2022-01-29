@@ -1,0 +1,184 @@
+.newItem{
+    flex: 4;
+}
+
+.newItemTitle{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.newItemContainer{
+    display: flex;
+    margin: 10px;
+}
+
+.newItemData{
+    flex: 2;
+    margin-right: 10px;
+}
+
+.newItemInputItem{
+    display: flex;
+    margin: 10px 5px;
+}
+
+
+.newItemInput{
+    height: 35px;
+    width: 450px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.newItemSelectionInput{
+    height: 40px;
+    width: 455px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.uploadInputField{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+}
+
+.generic-label{
+    width: 150px;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.file-upload-wrapper{
+    position: relative;
+    width: 455px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.file-upload-wrapper::after{
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 20;
+    height: 25px;
+    line-height: 25px;
+    background: #fff;
+    width: calc(100% - 40px);
+    display: block;
+    pointer-events: none;
+    color: gray;
+    padding: 6px 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-weight: 300;
+}
+
+.file-upload-wrapper::before{
+    content: "Upload";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 30;
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+    padding: 0 14px;
+    color: #fff;
+    display: inline-block;
+    text-transform: uppercase;
+    pointer-events: none;
+    border-radius: 0 5px 5px 0;
+    transition: 0.5s ease-in-out;
+    background: -webkit-linear-gradient(to right, #24C6DC, #514A9D);
+    background: linear-gradient(to right, #24C6DC, #514A9D);
+}
+
+.file-upload-wrapper:hover::before{
+    background: -webkit-linear-gradient(to right, #514A9D,#24C6DC );
+    background: linear-gradient(to right, #514A9D,#24C6DC);
+}
+
+.file-upload-wrapper input{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+}
+
+.buttonWrapper{
+    margin-top: 50px;
+    margin-left: 150px;
+}
+
+button{
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background: darkcyan;
+    cursor: pointer;
+}
+
+.textInput{
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+
+.newItemImg{
+    flex: 1;
+    margin-left: 10px;
+}
+
+.newItemImgContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.mainImg{
+    display: flex;
+}
+
+.mainImgProperty{
+    width: 100px;
+    width: 200px;
+    margin: 20px;
+}
+
+.titleImgProperty{
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+    margin: 40px;
+}
+
+.smallImgProperty{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 30px;
+}
+
+.trailerProperty{
+    width: 400px;
+    height: 200px;
+    margin: 30px;
+    object-fit: contain;
+}

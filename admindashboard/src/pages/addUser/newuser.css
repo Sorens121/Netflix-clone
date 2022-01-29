@@ -1,0 +1,96 @@
+.newuser{
+    flex: 4;
+}
+
+.newTitle{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.newUserContainer{
+    margin-top: 10px;
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+
+.newUserInputForm{
+    display: flex;
+}
+
+.newUserInputFormLeft{
+    flex: 2;
+    margin-right: 10px;
+}
+
+.newUserInputFormRight{
+    flex: 1;
+    margin-left: 10px;
+}
+
+.newUserInputItem{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.newUserInputItem>label{
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color:gray;
+}
+
+.newUserInput {
+    height: 20px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+select{
+    height: 40px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.newUserInputFormProfile{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.newUserInputFormUpload{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.newUserInputFormImg{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.newUserInputImgUpload{
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.newUserInputFormButton{
+    align-items: flex-end;
+    width: 200px;
+    border-radius: 5px;
+    border:none;
+    padding: 5px;
+    margin: 20px 10px;
+    cursor: pointer;
+    background-color: darkblue;
+    color: white;
+    font-weight: 600;
+}

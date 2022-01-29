@@ -1,0 +1,26 @@
+.viewall{
+    flex: 4;
+}
+
+.listTitle{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.genericList{
+    margin:15px 0px;
+    height: 50vh;
+}
+
+.genericList{
+    display: flex;
+    align-items: center;
+}
+
+.genericImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-right: 10px;
+}

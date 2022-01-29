@@ -13,11 +13,11 @@ export default function UserList() {
     }
 
     const columns = [
-        { field: 'id', headerName: 'ID', width: 90 },
+        { field: 'id', headerName: 'ID', width: 150 },
         {
           field: 'user',
           headerName: 'User',
-          width: 200,
+          width: 300,
           renderCell: (params) => {
               return(
                   <div className="userListUser">
@@ -30,26 +30,26 @@ export default function UserList() {
         {
           field: 'email',
           headerName: 'Email',
-          width: 150,
+          width: 400,
           editable: true,
         },
         {
           field: 'status',
           headerName: 'Status',
-          width: 150,
+          width:200,
           editable: true,
         },
         
         {
           field: 'transaction',
           headerName: 'Transaction',
-          width: 150,
+          width: 200,
           editable: true,
         },
         {
           field: 'action',
           headerName: 'Action',
-          width: 150,
+          width: 200,
           renderCell: (params) => {
               return(
                 <>
